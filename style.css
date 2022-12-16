@@ -1,0 +1,194 @@
+
+      @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+        body {
+
+            font-family: 'Rubik', sans-serif !important;
+            background-color: #E5E5E5;
+            color:  #202223;
+            font-size: 14px;
+           
+          
+           
+
+        }
+
+
+        .search-bar {
+            background-color: white;
+            border-radius: 5px;
+            width: 428px;
+            height: 37px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 10px;
+        }
+
+        input {
+            background-color: transparent;
+            border: 0px solid;
+            width: 90%
+        }
+
+        .container {
+
+            margin-top: 60px;
+
+        }
+
+        .card {
+            margin-bottom: 37px;
+            width: 253px;
+
+        }
+
+        i {
+            color: #015989;
+        }
+
+        .companyPharse {
+            color: #51C5FF;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-size: 12px !important;
+
+        }
+
+        #accordion {
+            margin-top: 80px;
+            display: flex;
+            justify-content: flex-start;
+            column-gap: 25px;
+
+
+        }
+
+        .card-body {
+            padding: 22px;
+        }
+
+        .cardText {
+            font-size: smaller;
+        }
+
+        #accordion {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .dropdownButton {
+            margin-right: 40px  !important;
+        }
+
+        .dropdown-menu {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .navbar {
+            box-shadow: 0 4px 8px 0 rgba(87, 86, 86, 0.247), 0 6px 20px 0 rgba(82, 81, 81, 0.19);
+        }
+        h6{
+             font-weight: 400 !important;
+        }
+
+
+
+        @media only screen and (max-width: 600px) {
+
+            .container {
+                margin-top: 20px;
+                margin-left: 8px;
+                margin-right: 8px;
+                width: 385px
+            }
+
+            .dropdownButton {
+                margin-top: 20px;
+                display: flex;
+                justify-content: end;
+
+            }
+
+            .dropdown-menu {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+
+            #accordion {
+                margin-top: 45px;
+            }
+
+            .card {
+                width: 400px;
+                margin-bottom: 25px;
+            }
+
+            .card-img-top {
+                display: none;
+            }
+
+            .companyPharse {
+                padding-top: 3px;
+                border-bottom: 1px solid #E8E8E8;
+                margin-bottom: 20px;
+                padding-bottom: 25px;
+            }
+
+            .card-img-top2 {
+                width: 90px;
+                height: 90px;
+                border-radius: 45px;
+                float: right;
+            }
+
+        }
+
+        @media only screen and (min-width: 601px)and (max-width:992px) {
+            .card-img-top2 {
+                display: none
+            }
+
+
+
+            .container {
+                margin-top: 20px;
+                margin-left: 8px;
+                margin-right: 8px;
+                width: 1000px
+            }
+
+            .dropdownButton {
+                margin-top: 20px;
+                display: flex;
+                justify-content: start;
+
+            }
+
+            .dropdown-menu {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+
+            #accordion {
+                margin-top: 45px;
+            }
+
+            .card {
+                width: 200px;
+                margin-bottom: 25px;
+            }
+
+            .pageHeader {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .search-bar {
+                width: 100%
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            .card-img-top2 {
+                display: none
+            }
+        }
+  
