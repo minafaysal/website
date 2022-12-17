@@ -63,17 +63,20 @@ function showCards(data) {
              <h6 class="cardText text-muted " > @${data.username}</h6>
              
              <h6 class=" cardText companyPharse ">  "${data.company.catchPhrase}" </h6>
-
-
-             <h6 class=" cardText"><i class="fa-regular fa-envelope"></i>&nbsp; ${data.email}</h6>
-             <h6 class="cardText "><i class="fa-solid fa-location-dot"></i>&nbsp;
+            <h6 class="divider" style= "border-bottom: 1px solid #E8E8E8;" ></h6>
+            <h6 class="spacer" style="height=10px ;padding-bottom:0.5px" ></h6>
+             <h6 class=" cardText"><img src = "envelope.png" alt="icone" class='icone' />&nbsp; ${data.email}</h6>
+                   <h6 class=" cardText grid-container">
+                   <div class="item4"><img src = "location.png" alt="icone" class='icone item1'/> </div>
+                   <div class="item5 item2" style="width:309px ">
              ${data.address.street},
              ${data.address.suite},${data.address.city},${data.address.zipcode},${data.address.geo.lat} ,${data.address.geo.lng} 
-            </h6>
-             <h6 class="cardText"><i class="fa-solid fa-phone"></i>&nbsp; ${data.phone}</h6>
-             <h6 class="cardText"> <i class="fa-solid fa-globe"></i>&nbsp; ${data.website} </h6>
-             <h6 class="cardText"><i class="fa-solid fa-briefcase"></i>&nbsp; ${data.company.name} </h6>
-             <h6 class="cardText"><i class="fa-solid fa-industry"></i>&nbsp;   ${data.company.bs} </h6>
+                   </div>
+                  </h6>
+             <h6 class="cardText"><img src = "telephone.png" alt="icone" class='icone' />&nbsp; ${data.phone}</h6>
+             <h6 class="cardText"><img src = "internet.png" alt="icone" class='icone' />&nbsp; ${data.website} </h6>
+             <h6 class="cardText"><img src = "briefcase.png" alt="icone" class='icone'/>&nbsp; ${data.company.name} </h6>
+             <h6 class="cardText"><img src = "power-plant.png" alt="icone" class='icone'/>&nbsp;   ${data.company.bs} </h6>
    
              
            </div>
@@ -94,8 +97,7 @@ function clearcontent() {
 }
 
 function addNewData(){
-    const parent = document.getElementById("container");
-    console.log(parent)
+    const parent = document.getElementById("container2");
      var newChild = ' <div id="accordion"></div>';
     parent.insertAdjacentHTML('beforeend', newChild);
 }

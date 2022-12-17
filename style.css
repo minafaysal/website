@@ -1,14 +1,11 @@
 
-      @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
         body {
 
             font-family: 'Rubik', sans-serif !important;
-            background-color: #E5E5E5;
+            background-color:  #F2F5FA;    
             color:  #202223;
-            font-size: 14px;
-           
-          
-           
+            font-size: 16px;
 
         }
 
@@ -21,7 +18,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-left: 10px;
+           
+        }
+        .query{
+            font-family: 'Rubik', sans-serif !important;
         }
 
         input {
@@ -30,15 +30,19 @@
             width: 90%
         }
 
-        .container {
+        .container2 {
 
             margin-top: 60px;
+            margin-left: 5%;
+            margin-right: 5%;
+            justify-content: space-around;
+          
 
         }
 
         .card {
             margin-bottom: 37px;
-            width: 253px;
+            width: 363px;
 
         }
 
@@ -48,8 +52,8 @@
 
         .companyPharse {
             color: #51C5FF;
-            padding-top: 15px;
-            padding-bottom: 15px;
+            padding-top: 8px;
+            padding-bottom:6px;
             font-size: 12px !important;
 
         }
@@ -74,6 +78,8 @@
         #accordion {
             display: flex;
             flex-wrap: wrap;
+           justify-content: center;
+            align-items: center;
         }
 
         .dropdownButton {
@@ -90,6 +96,49 @@
         h6{
              font-weight: 400 !important;
         }
+        .icone{
+            width: 15px;
+            height: 15px;
+           
+           
+        }
+        .box {
+
+            inline-size: 90%;
+            /* overflow-wrap: break-word;
+            hyphens: manual;
+            overflow-y:visible; */
+            background-color: #51C5FF;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 8px;
+          
+            
+          }
+          
+          .grid-container > h6 {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            
+            font-size: 30px;
+          }
+          
+    
+
+          .item1{
+            grid-column-start: 1;
+            grid-column-end: 2;
+             
+        }
+        .item2{
+            grid-column-start: 2;
+            grid-column-end: 3;
+     
+
+        }
+            
 
 
 
@@ -118,7 +167,7 @@
             }
 
             .card {
-                width: 400px;
+                width: 382px;
                 margin-bottom: 25px;
             }
 
@@ -128,19 +177,55 @@
 
             .companyPharse {
                 padding-top: 3px;
-                border-bottom: 1px solid #E8E8E8;
                 margin-bottom: 20px;
-                padding-bottom: 25px;
+                padding-bottom: 15px;
+                width:200px
             }
 
             .card-img-top2 {
-                width: 90px;
-                height: 90px;
-                border-radius: 45px;
+                width: 106px;
+                height: 109px;
+                border-radius: 53px;
                 float: right;
             }
+            .fw-bolder{
+                padding-top:17px;
+            }
+            .address{
+                display: grid;
+                grid-template-columns:3;
+
+            }
+          
+            .item1{
+                grid-column-start: 1;
+                grid-column-end: 2;
+                 
+            }
+            .item2{
+                grid-column-start: 2;
+                grid-column-end: 3;
+         
+
+            }
+
+            .grid-container {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                gap: 8px;
+              }
+              
+              .grid-container > h6 {
+                background-color: rgba(255, 255, 255, 0.8);
+                text-align: center;
+                font-size: 30px;
+              }
+              
+              
+
 
         }
+
 
         @media only screen and (min-width: 601px)and (max-width:992px) {
             .card-img-top2 {
@@ -184,11 +269,18 @@
             .search-bar {
                 width: 100%
             }
+            .divider{
+                display: none;
+                padding-bottom: 55px;
+            }
         }
 
         @media only screen and (min-width: 768px) {
             .card-img-top2 {
                 display: none
+            }
+            .divider{
+                display: none;
             }
         }
   

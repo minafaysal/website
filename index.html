@@ -19,7 +19,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap"
         rel="stylesheet">
-
+        <link href="/your-path-to-uicons/css/uicons-[your-style].css" rel="stylesheet"> 
     <title> Test Document</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -27,14 +27,14 @@
 </head>
 <body onload="getData()">
     <nav class="navbar navbar-expand-lg  navbar-light bg-light" style="height: 48px;"></nav>
-    <div class="container" id="container">
+    <div class="container2" id="container">
         <div class="pageHeader row  d-flex ">
             <div class="search-bar col-lg-4 col-sm-12">
                 <i class="fas fa-search"></i>&nbsp;
                 <input type="search" placeholder='Find Customers' aria-label="Search" id="query"
                     onkeyup="filter(this.value)">
             </div>
-            <div class=" col-lg-5"></div>
+            <div class=" col-lg-7"></div>
             <div class="dropdownButton  col-lg-1 col-sm-6 ">
 
                 <div class="dropdown show">
@@ -50,8 +50,9 @@
                 </div>
             </div>
         </div>
-        <div id="accordion"></div>
     </div>
+    <span id="container2"> </span>
+    <div id="accordion"></div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>
